@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         _mainCamera = Camera.main;
         _mainCamera.transform.position = _cameraPositions[_currentLevel].transform.position;
-
+        _mainCamera.transform.rotation = _cameraPositions[_currentLevel].transform.rotation;
     }
 
     public void PrevLevel()
