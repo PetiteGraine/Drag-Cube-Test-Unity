@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 63077684}
   - component: {fileID: 63077683}
   m_Layer: 0
-  m_Name: Cube (3) Number
+  m_Name: Name (3) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 281848488}
   - component: {fileID: 281848487}
   m_Layer: 0
-  m_Name: Clics
+  m_Name: Clics (1) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 743117135}
   - component: {fileID: 743117134}
   m_Layer: 0
-  m_Name: Errors
+  m_Name: Errors (3) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1230,7 +1230,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 163d7e20c856a53498b4421c432e6786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDraggable: 1
+  _isDraggable: 1
+  _timerText: {fileID: 2000029802}
+  _errorsText: {fileID: 743117134}
+  _clicsText: {fileID: 1304543016}
 --- !u!65 &862082821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1374,7 +1377,7 @@ GameObject:
   - component: {fileID: 923755197}
   - component: {fileID: 923755196}
   m_Layer: 0
-  m_Name: Clics
+  m_Name: Clics (2) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,7 +1669,7 @@ GameObject:
   - component: {fileID: 1008793423}
   - component: {fileID: 1008793422}
   m_Layer: 0
-  m_Name: Time
+  m_Name: Time (1) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1711,7 +1714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Temps : 0'
+  m_text: 'Temps : 00:00.00'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1941,7 +1944,7 @@ GameObject:
   - component: {fileID: 1304543017}
   - component: {fileID: 1304543016}
   m_Layer: 0
-  m_Name: Clics
+  m_Name: Clics (3) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2109,7 +2112,7 @@ GameObject:
   - component: {fileID: 1496864021}
   - component: {fileID: 1496864022}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Cube (1) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2216,7 +2219,7 @@ GameObject:
   - component: {fileID: 1596729482}
   - component: {fileID: 1596729481}
   m_Layer: 0
-  m_Name: Errors
+  m_Name: Errors (1) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2455,7 +2458,7 @@ GameObject:
   - component: {fileID: 1611045291}
   - component: {fileID: 1611045290}
   m_Layer: 0
-  m_Name: Time
+  m_Name: Time (2) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2500,7 +2503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Temps : 0'
+  m_text: 'Temps : 00:00.00'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2625,7 +2628,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 163d7e20c856a53498b4421c432e6786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDraggable: 1
+  _isDraggable: 1
+  _timerText: {fileID: 1008793422}
+  _errorsText: {fileID: 1596729481}
+  _clicsText: {fileID: 281848487}
 --- !u!65 &1700625488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2842,7 +2848,7 @@ GameObject:
   - component: {fileID: 1891453310}
   - component: {fileID: 1891453309}
   m_Layer: 0
-  m_Name: Errors
+  m_Name: Errors (2) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2976,7 +2982,7 @@ GameObject:
   - component: {fileID: 1971237525}
   - component: {fileID: 1971237524}
   m_Layer: 0
-  m_Name: Cube (2) Number
+  m_Name: Name (2) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3110,7 +3116,7 @@ GameObject:
   - component: {fileID: 2000029803}
   - component: {fileID: 2000029802}
   m_Layer: 0
-  m_Name: Time
+  m_Name: Time (3) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3155,7 +3161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Temps : 0'
+  m_text: 'Temps : 00:00.00'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3244,7 +3250,7 @@ GameObject:
   - component: {fileID: 2042273758}
   - component: {fileID: 2042273757}
   m_Layer: 0
-  m_Name: Cube (1) Number
+  m_Name: Name (1) A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3414,7 +3420,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 163d7e20c856a53498b4421c432e6786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDraggable: 1
+  _isDraggable: 1
+  _timerText: {fileID: 1611045290}
+  _errorsText: {fileID: 1891453309}
+  _clicsText: {fileID: 923755196}
 --- !u!65 &2056003906
 BoxCollider:
   m_ObjectHideFlags: 0
