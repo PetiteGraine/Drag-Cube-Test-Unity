@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class DraggableObject : MonoBehaviour
 {
-    [Header("Drag Settings")]
+    [Header("Settings")]
     private Camera _mainCamera;
     private bool _isDragging = false;
     private float _fixedY = 0.5f;
     private Plane _dragPlane;
     private Vector3 _offset;
     private bool _isDraggable = true;
+    [SerializeField] private int _currentLevel = 0;
+    private Vector3 _startingPosition;
 
     [Header("Timer")]
     private bool _isTimerOn = false;
@@ -29,6 +31,8 @@ public class DraggableObject : MonoBehaviour
     {
         _mainCamera = Camera.main;
         _timerText.text = "Temps : 00:00.00";
+        _startingPosition = transform.position;
+
     }
 
     private void OnMouseDown()
@@ -72,6 +76,8 @@ public class DraggableObject : MonoBehaviour
             if (col.CompareTag("Zone") && IsFullyInsideXZ(col))
             {
                 SetPlacement(col.transform.position.x, col.transform.position.y + 0.6f, col.transform.position.z);
+                col.gameObject.GetComponent<Collider>().enabled = false;
+                col.gameObject.GetComponent<Renderer>().material = Resources.Load<Material>("Green");
                 EndTimer();
                 break;
             }
@@ -141,5 +147,19 @@ public class DraggableObject : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void ResetStats(int level)
+    {
+        if (_currentLevel != level) return;
+        _clics = 0;
+        _errors = 0;
+        _elapsedTime = 0f;
+        _isDraggable = true;
+        _isTimerOn = false;
+        _timerText.text = "Temps : 00:00.00";
+        _clicsText.text = "Clics : 0";
+        _errorsText.text = "Erreurs : 0";
+        transform.position = _startingPosition;
     }
 }
