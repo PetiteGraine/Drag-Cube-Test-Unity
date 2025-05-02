@@ -46,8 +46,8 @@ public class GameManager : MonoBehaviour
         if (_currentLevel < 0) _currentLevel = 2;
         _panels[_currentLevel].SetActive(true);
         _levelText.text = _levelNames[_currentLevel];
-        _prevBtnText.text = "->" + _levelNames[_currentLevel - 1 < 0 ? 2 : _currentLevel - 1];
-        _nextBtnText.text = "->" + _levelNames[_currentLevel + 1 > 2 ? 0 : _currentLevel + 1];
+        _prevBtnText.text = "-> " + _levelNames[_currentLevel - 1 < 0 ? 2 : _currentLevel - 1];
+        _nextBtnText.text = "-> " + _levelNames[_currentLevel + 1 > 2 ? 0 : _currentLevel + 1];
 
         _mainCamera.transform.position = _cameraPositions[_currentLevel].transform.position;
         _mainCamera.transform.rotation = _cameraPositions[_currentLevel].transform.rotation;
